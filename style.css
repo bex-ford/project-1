@@ -1,0 +1,29 @@
+/* variables */
+:root {
+    --primaryclr: #054e37;
+    --primarylightclr: #12a537; 
+    --secondaryclr: #FCBC01;
+    --secondarylightclr: #F5CE64;
+    --accentclr: #5F1646;
+    --textlightclr: #d9d5d2;
+    --textcolor: black;
+    --serif: , serif;
+    --sans-serif: , sans-serif;
+  }
+
+/* Main style */
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+
+/* Header */
+header {
+    background-color: #fff;
+}
+
+header h1 {
+    color: var(--primaryclr);
+}
