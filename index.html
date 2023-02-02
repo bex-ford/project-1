@@ -23,81 +23,45 @@
       </div>
   </header>
 
-    <!--SUBTITLE - EXPLAINING ABOUT GLUTEN FREE-->
-    <div class="p-3 bg-dark text-white">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          >
-            <svg
-              class="bi me-2"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-            >
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
+     <!--SEARCH RECIPE SECTION-->
+     <section class="container my-5">
+      <div class="row">
+          <div class="col-12 col-md-6">
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input
-              type="search"
-              class="form-control form-control-dark"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
-          <div class="btn-group">
-            <button
-              class="btn btn-secondary btn-sm-p2-m2 dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Cuisine
-            </button>
-            <ul class="dropdown-menu"></ul>
+              <!--SEARCH DISH-->
+              <div class="form-group">
+                  <label for="dish">Dish</label>
+                  <input type="text" class="form-control" id="dish" placeholder="Enter dish name" />
+              </div>
           </div>
-          <div class="btn-group">
-            <button
-              class="btn btn-secondary btn-sm-p2-m2 dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Include Ingredients
-            </button>
-            <ul class="dropdown-menu"></ul>
+          <div class="col-12 col-md-6">
+
+              <!--CUISINE-->
+              <div class="form-group">
+                  <label for="cuisine">Cuisine</label>
+                  <select class="form-control" id="cuisine">
+                      <option selected disabled>Choose a cuisine</option>
+                  </select>
+              </div>
           </div>
-          <div class="btn-group">
-            <button
-              class="btn btn-secondary btn-sm-p2-m2 dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Exclude Ingredients
-            </button>
-            <ul class="dropdown-menu"></ul>
+          <div class="col-12 col-md-6">
+
+              <!--INCLUDE INGREDIENTS-->
+              <div class="form-group">
+                  <label for="include">Include Ingredients</label>
+                  <input type="text" class="form-control" id="include" placeholder="Enter ingredients to include" />
+              </div>
           </div>
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">
-              Search for recipe
-            </button>
-            <button type="button" class="btn btn-warning">
-              Clear search button
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!--HERE WE WILL -->
-    </header>
+
+          <div class="col-12 col-md-6">
+              <!--EXCLUDE INGREDIENTS-->
+              <div class="form-group">
+                  <label for="exclude">Exclude Ingredients</label>
+                  <input type="text" class="form-control" id="exclude" placeholder="Enter ingredients to exclude" />
+              </div>
+            </section>
+    
+            
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
