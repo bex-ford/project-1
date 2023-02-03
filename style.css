@@ -27,3 +27,28 @@ header {
 header h1 {
     color: var(--primaryclr);
 }
+
+/*  Youtube style */
+
+.youtube-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-title {
+    margin-top: 10px;
+}
+
+.video-img {
+    display: block;
+    margin: 10px auto;
+    padding: 10px auto;
+    text-align: center;
+}
+
+.video-link {
+    margin: 15px auto;
+    padding: 15px auto;
+
+}
