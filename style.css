@@ -12,7 +12,7 @@
   }
 
 /* Header */
-.jumbotron {
+header {
     background-color: var(--primaryclr);
 }
 
