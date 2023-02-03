@@ -5,19 +5,38 @@
     --secondaryclr: #FCBC01;
     --secondarylightclr: #F5CE64;
     --accentclr: #5F1646;
-    --textlightclr: #d9d5d2;
+    --textlightclr: #fff;
     --textcolor: black;
-    --serif: , serif;
-    --sans-serif: , sans-serif;
+    --sans-serif: Jost, sans-serif;
   }
 
-/* Header */
-header {
+
+/* Main style */
+body {
+    font-family: var(--sans-serif);
+}
+  
+/* Navigation bar */
+.navbar {
     background-color: var(--primaryclr);
 }
 
-/*  Youtube style */
+.nav-link, .navbar-brand {
+    color: var(--textlightclr);
+    font-weight: 700;
+}
 
+.nav-link:hover, .navbar-brand:hover {
+    color: var(--secondarylightclr);
+    
+}
+
+/* Header */
+header {
+    background-color: var(--primaryclr); 
+}
+
+/*  Youtube style */
 .youtube-container {
     width: 50%;
     margin: 0 auto;
