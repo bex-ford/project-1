@@ -52,3 +52,36 @@ header h1 {
     padding: 15px auto;
 
 }
+
+/* Footer section */
+.bi-arrow-up-circle {
+    color: var(--primarylightclr);
+}
+
+.card-bg-primary {
+    background-color: var(--primaryclr);
+    border: 1px solid var(--primaryclr);
+    border-radius: 5px;
+}
+
+.btn-acc-round {
+    background-color: var(--primarylightclr);
+    border: 5px solid var(--primarylightclr);
+    border-radius: 50%;
+    color: var(--textlightclr);
+    font-weight: 700;
+    margin: 15px;
+}
+
+.btn-acc-round:hover {
+        background-color: var(--secondarylightclr);
+        border: 5px solid var(--secondarylightclr);
+        color: var(--textlightclr);
+        box-shadow: 0 0 11px rgba(33,33,33,.5); 
+}
+
+a, 
+a:hover {
+    text-decoration: none;
+    color: var(--textlightclr);
+}
