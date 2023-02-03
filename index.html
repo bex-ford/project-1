@@ -5,22 +5,39 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!-- Project CSS -->
   <link rel="stylesheet" href="style.css">
   <title>Just Veggie</title>
 </head>
 
 <body>
-
   <!--JUMBOTRON - LOGO AND TITLE Centered -->
-  <header class="jumbotron jumbotron-fluid bg-light text-dark text-center">
+  <header class="jumbotron jumbotron-fluid text-center">
     <div class="container">
-      <img src="undraw_cooking_ceye.svg" alt="LOGO" class="img-fluid w-25 d-block mx-auto mb-3" />
-      <h1 class="display-4">Just Veggie</h1>
-      <p class="lead">Gluten-free vegetarian recipe ideas</p>
+      <img src="./assets/logo.svg" alt="JustVeggie logo" class="img-fluid w-25 d-block mx-auto mb-3" />
     </div>
   </header>
+
+  <!-- About section -->
+  <section id="about" class="p-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+                <h2>Healthy eating, effortlessly delicious!</h2>
+                <p class="lead">Savor the taste of healthy eating with our exclusive curated collection of vegetarian, gluten-free recipes.</p>
+            </div>
+            <div class="col-md">
+                <img src="./assets/korean veg.png" alt="Korean vegetarian food" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
 
   <!--SEARCH RECIPE SECTION-->
   <section class="container my-5">
@@ -40,6 +57,32 @@
           <label for="cuisine">Cuisine</label>
           <select class="form-control" id="cuisine">
             <option selected disabled>Choose a cuisine</option>
+            <option>African</option>
+            <option>American</option>
+            <option>British</option>
+            <option>Cajun</option>
+            <option>Caribbean</option>
+            <option>Chinese</option>
+            <option>Eastern European</option>
+            <option>European</option>
+            <option>French</option>
+            <option>German</option>
+            <option>Greek</option>
+            <option>Indian</option>
+            <option>Irish</option>
+            <option>Italian</option>
+            <option>Japanese</option>
+            <option>Jewish</option>
+            <option>Korean</option>
+            <option>Latin American</option>
+            <option>Mediterranean</option>
+            <option>Mexican</option>
+            <option>Middle Eastern</option>
+            <option>Nordic</option>
+            <option>Southern</option>
+            <option>Spanish</option>
+            <option>Thai</option>
+            <option>Vietnamese</option>
           </select>
         </div>
       </div>
@@ -104,6 +147,30 @@
     <!-- HTML to be populated by the API dinamically -->
   </div>
 
+  <!-- Footer section with social icons -->
+  <footer class="p-5 card-bg-primary text-light text-center position-relative">
+    <div class="container">
+      <div class="social">
+        <button type="button" class="btn btn-acc-round">
+          <a target="_blank" href="https://www.youtube.com/"><span class="fa-brands fa-youtube"
+              aria-hidden="true"></span><span class="sr-only">Youtube</span></a>
+        </button>
+        <button type="button" class="btn btn-acc-round">
+          <a target="_blank" href="https://twitter.com"><span class="fa-brands fa-twitter"
+              aria-hidden="true"></span><span class="sr-only">Twitter</span></a>
+        </button>
+        <button type="button" class="btn btn-acc-round">
+          <a target="_blank" href="https://www.instagram.com/"><span class="fa-brands fa-instagram"
+              aria-hidden="true"></span><span class="sr-only">Instagram</span></a>
+        </button>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2022 Bex Ford - Carolina Lupanciuc - Clelia Mangione</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+      </div>
+    </div>
+  </footer>
+
   <!-- JS FILES -->
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -111,7 +178,13 @@
   <script src="spoonacular.js"></script>
   <!-- Youtube -->
   <script src="youtube.js"></script>
-  
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
