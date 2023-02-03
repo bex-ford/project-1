@@ -11,21 +11,9 @@
     --sans-serif: , sans-serif;
   }
 
-/* Main style */
-body::before {
-    display: block;
-    content: '';
-    height: 60px;
-}
-
-
 /* Header */
-header {
-    background-color: #fff;
-}
-
-header h1 {
-    color: var(--primaryclr);
+.jumbotron {
+    background-color: var(--primaryclr);
 }
 
 /*  Youtube style */
