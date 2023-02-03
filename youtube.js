@@ -19,8 +19,7 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
         <br>
         <img class="video-img" src="${video.snippet.thumbnails.medium.url}">
         <br>
-        <a href="https://www.youtube.com/watch?v=${video.snippet.videoId}" class="btn btn-danger video-btn">Watch on YouTube</a>
+        <a href="https://www.youtube.com/watch?v=${video.id.videoId}" class="btn btn-danger video-btn">Watch on YouTube</a>
         `
     }
 });    
- 
