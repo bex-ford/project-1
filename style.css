@@ -46,9 +46,27 @@ header {
     margin-bottom: 100px;
 }
 
-#about img {
-    width: auto;
-    height: auto;
+/* Order */
+label {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.form-group {
+    margin-top: 30px;
+}
+
+.btn-search, .btn-clear {
+    background-color: var(--secondarylightclr);
+    color: var(--primaryclr);
+    width: 250px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn-search:hover, .btn-clear:hover {
+    background-color: var(--accentclr);
+    color: var(--textlightclr);
 }
 
 /*  Youtube style */
@@ -76,7 +94,6 @@ header {
 }
 
 /* FAQ section */
-
 #questions, .accordion-item, .accordion-header, .accordion-button {
     background-color: var(--accentclr);
     color: var(--textlightclr);
