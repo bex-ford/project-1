@@ -101,16 +101,26 @@
           <label for="exclude">Exclude Ingredients</label>
           <input type="text" class="form-control" id="exclude" placeholder="Enter ingredients to exclude" />
         </div>
-
+<br>
         <!-- SEARCH BUTTON MISSING to add -->
-        <div class="col-12 col-md-6">
-
-          <div class="form-group">
-            <label for="search">Search</label>
-            <button id="search-button"> Search </button>
-          </div>
-  
+        <div class="text-center my-5">
+        <div class="form-group">
+        <button type ="submit" id="search-button" class="btn btn-danger"> Search </button>
+        </div>
+        
+       
   </section>
+  <!-- SPOONACULAR SECTION -->
+  <div class="recipe-result" id="recipe">
+  <div id="meal">
+    <div class = "food-item">
+      <div class = "food-img">
+        <img src = "" alt = "">
+      </div>
+    </div>
+  </div>
+  <!-- HTML to be populated by the API dinamically -->
+  </div>
 
   <!-- SEARCH HISTORY SECTION (Just css class to have them created dinamically in Java) -->
   <section class="container my-5">
@@ -165,7 +175,7 @@
         </button>
       </div>
       <div class="copyright">
-        <p>Copyright &copy; 2022 Bex Ford - Carolina Lupanciuc - Clelia Mangione</p>
+        <p>Copyright &copy; 2022 Bex Ford - Clelia Mangione</p>
         <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
       </div>
     </div>
