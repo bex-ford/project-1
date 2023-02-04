@@ -5,19 +5,71 @@
     --secondaryclr: #FCBC01;
     --secondarylightclr: #F5CE64;
     --accentclr: #5F1646;
-    --textlightclr: #d9d5d2;
+    --textlightclr: #fff;
     --textcolor: black;
-    --serif: , serif;
-    --sans-serif: , sans-serif;
+    --sans-serif: Jost, sans-serif;
   }
 
-/* Header */
-header {
+
+/* Main style */
+body {
+    font-family: var(--sans-serif);
+}
+  
+/* Navigation bar */
+.navbar {
     background-color: var(--primaryclr);
 }
 
-/*  Youtube style */
+.nav-link, .navbar-brand {
+    color: var(--textlightclr);
+    font-weight: 700;
+}
 
+.nav-link:hover, .navbar-brand:hover {
+    color: var(--secondarylightclr);
+    
+}
+
+/* Header */
+header {
+    background-color: var(--primaryclr); 
+}
+
+/* Jumbotron */
+#mission {
+    color: var(--primaryclr);
+    padding-bottom: 20px;
+}
+
+#about {
+    margin-bottom: 100px;
+}
+
+/* Order */
+label {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.form-group {
+    margin-top: 30px;
+}
+
+.btn-search, .btn-clear {
+    background-color: var(--secondarylightclr);
+    color: var(--primaryclr);
+    width: 250px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn-search:hover, .btn-clear:hover {
+    background-color: var(--accentclr);
+    color: var(--textlightclr);
+}
+
+/*  Youtube style */
 .youtube-container {
     width: 50%;
     margin: 0 auto;
@@ -41,20 +93,40 @@ header {
 
 }
 
+/* FAQ section */
+#questions, .accordion-item, .accordion-header, .accordion-button {
+    background-color: var(--accentclr);
+    color: var(--textlightclr);
+}
+
+/* Newsletter sign-up */
+.news-cust {
+    color: var(--primaryclr);
+}
+
+.btn-news {
+    background-color: var(--secondarylightclr);
+    color: var(--primaryclr);
+}
+
+.btn-news:hover {
+    background-color: var(--accentclr);
+    color: var(--textlightclr);
+}
+
 /* Footer section */
 .bi-arrow-up-circle {
-    color: var(--primarylightclr);
+    color: var(--textlightclr);
 }
 
 .card-bg-primary {
     background-color: var(--primaryclr);
     border: 1px solid var(--primaryclr);
-    border-radius: 5px;
 }
 
 .btn-acc-round {
-    background-color: var(--primarylightclr);
-    border: 5px solid var(--primarylightclr);
+    background-color: var(--secondarylightclr);
+    border: 5px solid var(--secondarylightclr);
     border-radius: 50%;
     color: var(--textlightclr);
     font-weight: 700;
@@ -62,8 +134,8 @@ header {
 }
 
 .btn-acc-round:hover {
-        background-color: var(--secondarylightclr);
-        border: 5px solid var(--secondarylightclr);
+        background-color: var(--accentclr);
+        border: 5px solid var(--accentclr);
         color: var(--textlightclr);
         box-shadow: 0 0 11px rgba(33,33,33,.5); 
 }

@@ -8,39 +8,66 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!--Font Awesome CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!-- Google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- Project CSS -->
   <link rel="stylesheet" href="style.css">
   <title>Just Veggie</title>
 </head>
 
 <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">JustVeggie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="navbar-item">
+            <a href="#order" class="nav-link">Find your recipe</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#youtube" class="nav-link">Ideas on Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
   <!--JUMBOTRON - LOGO AND TITLE Centered -->
   <header class="jumbotron jumbotron-fluid text-center">
     <div class="container">
-      <img src="./assets/logo.svg" alt="JustVeggie logo" class="img-fluid w-25 d-block mx-auto mb-3" />
+      <img src="./assets/logo.svg" alt="JustVeggie logo" class="img-fluid w-50 d-block mx-auto mb-3" />
     </div>
   </header>
 
-  <!-- About section -->
-  <section id="about" class="p-5">
+  <!-- SHOWCASE -->
+  <section id="about">
     <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-md p-5">
-                <h2>Healthy eating, effortlessly delicious!</h2>
-                <p class="lead">Savor the taste of healthy eating with our exclusive curated collection of vegetarian, gluten-free recipes.</p>
-            </div>
-            <div class="col-md">
-                <img src="./assets/korean veg.png" alt="Korean vegetarian food" class="img-fluid">
-            </div>
+      <div class="row align-items-center justify-content-between p-5" id="mission-row">
+        <div class="col-md p-5">
+          <h1 id="mission">Healthy eating, <br>
+            effortlessly delicious!</h1>
+          <p class="lead">Savor the taste of healthy eating with our exclusive curated collection of vegetarian,
+            gluten-free recipes.</p>
         </div>
+        <div class="col-md">
+          <img src="./assets/korean veg.png" alt="Korean vegetarian food" class="img-fluid">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <!--SEARCH RECIPE SECTION-->
-  <section class="container my-5">
+  <section class="container" id="order">
     <div class="row">
       <div class="col-12 col-md-6">
 
@@ -101,26 +128,7 @@
           <label for="exclude">Exclude Ingredients</label>
           <input type="text" class="form-control" id="exclude" placeholder="Enter ingredients to exclude" />
         </div>
-<br>
-        <!-- SEARCH BUTTON MISSING to add -->
-        <div class="text-center my-5">
-        <div class="form-group">
-        <button type ="submit" id="search-button" class="btn btn-danger"> Search </button>
-        </div>
-        
-       
   </section>
-  <!-- SPOONACULAR SECTION -->
-  <div class="recipe-result" id="recipe">
-  <div id="meal">
-    <div class = "food-item">
-      <div class = "food-img">
-        <img src = "" alt = "">
-      </div>
-    </div>
-  </div>
-  <!-- HTML to be populated by the API dinamically -->
-  </div>
 
   <!-- SEARCH HISTORY SECTION (Just css class to have them created dinamically in Java) -->
   <section class="container my-5">
@@ -148,7 +156,7 @@
     </div>
     <!-- CLEAR HISTORY BUTTON -->
     <div class="text-center my-5">
-      <button type="button" class="btn btn-danger">Clear History</button>
+      <button type="button" class="btn btn-clear">Clear History</button>
     </div>
   </section>
 
@@ -156,6 +164,109 @@
   <div class="youtube-container" id="youtube">
     <!-- HTML to be populated by the API dinamically -->
   </div>
+
+
+  <!-- FAQ Accordion-->
+  <section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="questions">
+
+        <!--Item1-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-1">
+              What is the purpose of this app?
+            </button>
+          </h2>
+          <div id="question-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#questions">
+            <div class="accordion-body">JustVeggie mission is to provide recipe ideas for people who follow a vegetarian
+              and gluten-free diet. </div>
+          </div>
+        </div>
+
+        <!--Item2-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-2">
+              Is this application free to use?
+            </button>
+          </h2>
+          <div id="question-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#questions">
+            <div class="accordion-body">Yes, the app is completely free to use as of now because it is in its beta
+              testing phase.</div>
+          </div>
+        </div>
+
+        <!--Item3-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-3">
+              Can I save my favourite receipes on the app?
+            </button>
+          </h2>
+          <div id="question-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#questions">
+            <div class="accordion-body">You can save the last 6 recipes that you serached for so if you like them, you
+              will always have the possibility to cook them again.</div>
+          </div>
+        </div>
+
+        <!--Item4-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-4">
+              Are all the recipes in this app vegeterian and gluten-free?
+            </button>
+          </h2>
+          <div id="question-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#questions">
+            <div class="accordion-body">Yes, all the recipes provided on this app are specifically designed to be both
+              vegetarian and gluten-free.</div>
+          </div>
+        </div>
+
+        <!--Item5-->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-5">
+              Are there options to filter recipes by specific dietary needs or restrictions?
+            </button>
+          </h2>
+          <div id="question-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#questions">
+            <div class="accordion-body">Sure! The database is already set to provide you only vegetarian and gluten-free
+              recipes but you can also include or exclude certain ingredients or choose your favourite cousine.</div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Newsletter-->
+  <section class="news-cust p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">
+          Sign up for Our Newsletter
+        </h3>
+
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+
+          <button class="btn btn-news btn-lg" type="button">Subscribe</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer section with social icons -->
   <footer class="p-5 card-bg-primary text-light text-center position-relative">
@@ -192,9 +303,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Bootstrap Js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous">
-  </script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
