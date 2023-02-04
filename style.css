@@ -36,6 +36,21 @@ header {
     background-color: var(--primaryclr); 
 }
 
+/* Jumbotron */
+#mission {
+    color: var(--primaryclr);
+    padding-bottom: 20px;
+}
+
+#about {
+    margin-bottom: 100px;
+}
+
+#about img {
+    width: auto;
+    height: auto;
+}
+
 /*  Youtube style */
 .youtube-container {
     width: 50%;
@@ -73,12 +88,13 @@ header {
 }
 
 .btn-news {
-    background-color: var(--secondaryclr);
+    background-color: var(--secondarylightclr);
     color: var(--primaryclr);
 }
 
 .btn-news:hover {
-    background-color: var(--secondarylightclr);
+    background-color: var(--accentclr);
+    color: var(--textlightclr);
 }
 
 /* Footer section */
@@ -92,8 +108,8 @@ header {
 }
 
 .btn-acc-round {
-    background-color: var(--secondaryclr);
-    border: 5px solid var(--secondaryclr);
+    background-color: var(--secondarylightclr);
+    border: 5px solid var(--secondarylightclr);
     border-radius: 50%;
     color: var(--textlightclr);
     font-weight: 700;
@@ -101,8 +117,8 @@ header {
 }
 
 .btn-acc-round:hover {
-        background-color: var(--secondarylightclr);
-        border: 5px solid var(--secondarylightclr);
+        background-color: var(--accentclr);
+        border: 5px solid var(--accentclr);
         color: var(--textlightclr);
         box-shadow: 0 0 11px rgba(33,33,33,.5); 
 }
