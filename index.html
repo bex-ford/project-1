@@ -41,7 +41,6 @@
     </div>
   </nav>
 
-
   <!--JUMBOTRON - LOGO AND TITLE Centered -->
   <header class="jumbotron jumbotron-fluid text-center">
     <div class="container">
@@ -74,7 +73,7 @@
         <!--SEARCH DISH-->
         <div class="form-group">
           <label for="dish">Dish</label>
-          <input type="text" class="form-control" id="dish" placeholder="Enter dish name" />
+          <input type="text" class="form-control" id="dish" placeholder="Search your meal.." />
         </div>
       </div>
       <div class="col-12 col-md-6">
@@ -115,8 +114,8 @@
       </div>
       <div class="col-12 col-md-6">
 
-        <!--INCLUDE INGREDIENTS-->
-        <div class="form-group">
+        <!-- INCLUDE INGREDIENTS-->
+      <div class="form-group">
           <label for="include">Include Ingredients</label>
           <input type="text" class="form-control" id="include" placeholder="Enter ingredients to include" />
         </div>
@@ -127,9 +126,65 @@
         <div class="form-group">
           <label for="exclude">Exclude Ingredients</label>
           <input type="text" class="form-control" id="exclude" placeholder="Enter ingredients to exclude" />
-        </div>
+        </div>  
   </section>
 
+<!--SEARCH BUTTON FOR SPOONACULAR API-->
+     <div class="text-center my-5">
+      <div id ="search-button">
+      <button type="button" class="btn btn-clear">Search your recipe</button>
+    </div>
+    </div>
+    <!--SEARCH RESULTS-->
+    <div class ="search-result">
+      <h2 class = "title">Your Search Results:</h2>
+      <div id = "recipe">
+        <!--Recipe item-->
+        <!-- <div class = "container">
+        <div class = "recipe-item">
+          <div class = "recipe-img">
+            <img src = "assets/pancake.png" alt = "food">
+          </div>
+          <div class = "recipe-name">
+            <h3>Pancakes</h3>
+            <a href = "#" class = "recipe-btn">Get Recipe</a>
+          </div>
+        </div> 
+        </div> -->
+        <!-- <div class = "container">
+        <div class = "recipe-item">
+          <div class = "recipe-img">
+            <img src = "assets/pancake.png" alt = "food">
+          </div>
+          <div class = "recipe-name">
+            <h3>Pancakes</h3>
+            <a href = "#" class = "recipe-btn">Get Recipe</a>
+          </div>
+        </div> 
+        </div>
+        <div class = "container">
+        <div class = "recipe-item">
+          <div class = "recipe-img">
+            <img src = "assets/pancake.png" alt = "food">
+          </div>
+          <div class = "recipe-name">
+            <h3>Pancakes</h3>
+            <a href = "#" class = "recipe-btn">Get Recipe</a>
+          </div>
+        </div> 
+        </div>
+        <div class = "container">
+          <div class = "recipe-item">
+            <div class = "recipe-img">
+              <img src = "assets/pancake.png" alt = "food">
+            </div>
+            <div class = "recipe-name">
+              <h3>Pancakes</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> 
+          </div> -->
+                   
   <!-- SEARCH HISTORY SECTION (Just css class to have them created dinamically in Java) -->
   <section class="container my-5">
     <h2 class="text-center font-weight-bold">Search History</h2>
