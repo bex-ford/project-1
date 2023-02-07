@@ -1,6 +1,6 @@
 // GET request to the Youtube API to search for videos with "gluten free vegetarian receipes" keyword (max 6)
 fetch(
-  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=gluten%20free%20vegetarian%20recipes&key=XXX"
+  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=gluten%20free%20vegetarian%20recipes&key=AIzaSyBtVcpEBC7OOCsQxa7h_5TCjeUuaynHiWo"
 )
   
 // Take the response from the API and converts it to JSON format
@@ -18,11 +18,15 @@ fetch(
     // Videos info is added as HTML content to the "videoContainer" element;
     for (video of videos) {
       videoContainer.innerHTML += `
-        <h3 class= "video-title">${video.snippet.title}</h3>
-        <br>
-        <img class="video-img" src="${video.snippet.thumbnails.medium.url}">
-        <br>
-        <a href="https://www.youtube.com/watch?v=${video.id.videoId}" class="btn btn-danger video-btn">Watch on YouTube</a>
+      <div class="video-container">
+      <h3 class= "video-title">${video.snippet.title}</h3>
+      <br>
+      <img class="video-img" src="${video.snippet.thumbnails.medium.url}">
+      <br>
+      <a href="https://www.youtube.com/watch?v=${video.id.videoId}" class="video-link">
+        <button class="btn video-btn">Watch on YouTube</button>
+      </a>
+    </div>
         `
     }
 });    
