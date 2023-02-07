@@ -52,7 +52,7 @@ function spoonacularQuery() {
     // Build HTML template for each recipe and display the results
     console.log(response)
     let html = "";
- 
+
     if (response.results) {
       response.results.forEach((recipe) => {
         html += `
@@ -61,9 +61,12 @@ function spoonacularQuery() {
             <img src = "${recipe.image}" alt = "food">
           </div>
           <p class = "recipe-title">${recipe.title}</p>
-          <a href = "#" class = "recipe-btn">Get Recipe</a>
+          <button data-url=localhost id="get-recipe-${recipe.id}" getrecipe(document.getElementById("sourceLink").value">Get Recipe</button>
+        <a href ="getsource(recipe.id)"class="btn btn-danger video-btn"></a>
+          </div>
         </div>
       `;
+      getsource(recipe.id)
        // Add recipe HTML to recipe list
         $("#recipe").append(html);
         // Reset HTML variable
@@ -76,6 +79,24 @@ function spoonacularQuery() {
     }
   });
 }
+function getsource(id){
+  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=cff15fd5c68a4190b152f91d1c8785a0`;
+    $.ajax({
+      method: "GET",
+      url: srcUrl,
+    }).done(function (responseUrl) {
+      success = function(res) {
+          document.getElementById("get-recipe-${id}").innerHTML=res.sourceUrl
+          document.getElementById("get-recipe-${id}").setAttribute("data-url",res.sourceUrl);
+    
+    }
+    });
+}
 
 // Trigger spoonacularQuery function when search button is clicked
 searchBtn.click(spoonacularQuery);
+
+// event deligation look into container for a button for every button onlick 
+// or use anchor tag so it looks like a button - set HREF 
+// then you will get the data URL off the button 
+// then open new tab to link to the website 
