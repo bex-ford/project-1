@@ -56,42 +56,49 @@ label {
     margin-top: 30px;
 }
 
-.btn-search, .btn-clear {
+.btn-search, .btn-clear, .video-btn {
     background-color: var(--secondarylightclr);
     color: var(--primaryclr);
     width: 250px;
     font-size: 25px;
     font-weight: 500;
+    border-radius: 5px;
 }
 
-.btn-search:hover, .btn-clear:hover {
+.btn-search:hover, .btn-clear:hover, .video-btn:hover {
     background-color: var(--accentclr);
     color: var(--textlightclr);
 }
 
 /*  Youtube style */
-.youtube-container {
-    width: 50%;
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 10px);
     margin: 0 auto;
-    text-align: center;
-}
-
-.video-title {
+    margin-bottom: 10px;
+  }
+  
+  .video-title {
     margin-top: 10px;
-}
-
-.video-img {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .video-img {
     display: block;
     margin: 10px auto;
     padding: 10px auto;
     text-align: center;
-}
-
-.video-link {
+  }
+  
+  .video-link {
     margin: 15px auto;
     padding: 15px auto;
-
-}
+    text-align: center;
+    background-color: var(--secondarylightclr);
+  }
 
 /* FAQ section */
 #questions, .accordion-item, .accordion-header, .accordion-button {
