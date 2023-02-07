@@ -69,6 +69,32 @@ label {
     color: var(--textlightclr);
 }
 
+/* Spoonacular */
+.recipe-item  {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    background-color: var(--secondarylightclr);
+   
+}
+
+.recipe-btn {
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: flex-start;
+    background-color: var(--primaryclr);
+    color: var(--secondarylightclr);
+}
+
+h2 {
+    text-align: center;
+}
+
 /*  Youtube style */
 .youtube-container {
     width: 50%;
@@ -143,5 +169,5 @@ label {
 a, 
 a:hover {
     text-decoration: none;
-    color: var(--textlightclr);
+    color: var(--primaryclr);
 }
