@@ -1,5 +1,5 @@
 // Assign API Key to a variable
-var apiKey = "cff15fd5c68a4190b152f91d1c8785a0"; 
+var apiKey = "c655cae4e0704d809f85edc0e01f4732"; 
 
 // Store input values in variables
 var recipeName = $("#dish").val();
@@ -61,9 +61,7 @@ function spoonacularQuery() {
             <img src = "${recipe.image}" alt = "food">
           </div>
           <p class = "recipe-title">${recipe.title}</p>
-          <button data-url=localhost id="get-recipe-${recipe.id}" getrecipe(document.getElementById("sourceLink").value">Get Recipe</button>
-        <a href ="getsource(recipe.id)"class="btn btn-danger video-btn"></a>
-          </div>
+          <button id = "get-recipe-${recipe.id}">Get Recipe</button>
         </div>
       `;
       getsource(recipe.id)
@@ -77,26 +75,24 @@ function spoonacularQuery() {
       html = "Sorry, we didn't find your recipe!";
       $("#recipe").html(html);
     }
+    
   });
 }
-function getsource(id){
-  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=cff15fd5c68a4190b152f91d1c8785a0`;
-    $.ajax({
-      method: "GET",
-      url: srcUrl,
-    }).done(function (responseUrl) {
-      success = function(res) {
-          document.getElementById("get-recipe-${id}").innerHTML=res.sourceUrl
-          document.getElementById("get-recipe-${id}").setAttribute("data-url",res.sourceUrl);
-    
-    }
+function getsource(id) {
+  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=c655cae4e0704d809f85edc0e01f4732`;
+
+  $.ajax({
+    method: "GET",
+    url: srcUrl,
+  }).done(function (response) {
+    var recipeLink = response.sourceUrl;
+    // Update the link of the button with the recipe source link
+    $(`#get-recipe-${id}`).attr("data-url", recipeLink);
+    $(`#get-recipe-${id}`).click(function() {
+      window.open(recipeLink, "_blank");
     });
+  });
 }
 
 // Trigger spoonacularQuery function when search button is clicked
 searchBtn.click(spoonacularQuery);
-
-// event deligation look into container for a button for every button onlick 
-// or use anchor tag so it looks like a button - set HREF 
-// then you will get the data URL off the button 
-// then open new tab to link to the website 
