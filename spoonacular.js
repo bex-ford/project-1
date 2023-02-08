@@ -1,5 +1,5 @@
 // Assign API Key to a variable
-var apiKey = "6bc4f4c185534fd9b7c66954430909da"; 
+var apiKey = "417b0ee574024fdba584113ed74ce282"; 
 
 // Store input values in variables
 var recipeName = $("#dish").val();
@@ -86,7 +86,7 @@ searchBtn.click(function(){
 });
 
 function getsource(id) {
-  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=6bc4f4c185534fd9b7c66954430909da`;
+  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=417b0ee574024fdba584113ed74ce282`;
 
   $.ajax({
     method: "GET",
