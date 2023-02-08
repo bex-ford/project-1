@@ -56,12 +56,12 @@ function spoonacularQuery() {
     if (response.results) {
       response.results.forEach((recipe) => {
         html += `
-        <div class = "recipe-item" data-id ="${recipe.id}">
-          <div class = "recipe-img">
-            <img src = "${recipe.image}" alt = "food">
+        <div class="recipe-card">
+          <img class="recipe-card-img" src="${recipe.image}" alt="food">
+          <div class="recipe-card-info">
+            <p class="recipe-card-title">${recipe.title}</p>
+            <button class="recipe-card-btn" id="get-recipe-${recipe.id}" >Get Recipe</button> 
           </div>
-          <p class = "recipe-title">${recipe.title}</p>
-          <button id = "get-recipe-${recipe.id}">Get Recipe</button>
         </div>
       `;
       getsource(recipe.id)
