@@ -56,13 +56,13 @@ function spoonacularQuery() {
     if (response.results) {
       response.results.slice(0,6).forEach((recipe) => {
         html += `
-        <div class="recipe-card">
-          <img class="recipe-card-img" src="${recipe.image}" alt="food">
-          <div class="recipe-card-info">
-            <p class="recipe-card-title">${recipe.title}</p>
-            <button class="recipe-card-btn" id="get-recipe-${recipe.id}" >Get Recipe</button> 
+          <div class="recipe-card">
+            <img class="recipe-card-img" src="${recipe.image}" alt="food">
+            <div class="recipe-card-info">
+              <p class="recipe-card-title">${recipe.title}</p>
+              <button class="recipe-card-btn" id="get-recipe-${recipe.id}" >Get Recipe</button> 
+            </div>
           </div>
-        </div>
       `;
       getsource(recipe.id)
        // Add recipe HTML to recipe list
