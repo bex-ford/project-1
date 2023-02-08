@@ -1,5 +1,5 @@
 // Assign API Key to a variable
-var apiKey = "c655cae4e0704d809f85edc0e01f4732"; 
+var apiKey = "6bc4f4c185534fd9b7c66954430909da"; 
 
 // Store input values in variables
 var recipeName = $("#dish").val();
@@ -75,11 +75,18 @@ function spoonacularQuery() {
       html = "Sorry, we didn't find your recipe!";
       $("#recipe").html(html);
     }
-    
   });
 }
+
+// Trigger spoonacularQuery function when search button is clicked
+searchBtn.click(function(){
+  // Reset the receipelist inner HTML to an empty string
+  recipeList.html("");
+  spoonacularQuery();
+});
+
 function getsource(id) {
-  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=c655cae4e0704d809f85edc0e01f4732`;
+  let srcUrl = `https://api.spoonacular.com/recipes/${id}/information?apiKey=6bc4f4c185534fd9b7c66954430909da`;
 
   $.ajax({
     method: "GET",
@@ -93,6 +100,3 @@ function getsource(id) {
     });
   });
 }
-
-// Trigger spoonacularQuery function when search button is clicked
-searchBtn.click(spoonacularQuery);
