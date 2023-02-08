@@ -50,11 +50,11 @@ function spoonacularQuery() {
     url: queryUrl,
   }).done(function (response) {
     // Build HTML template for each recipe and display the results
-    console.log(response)
+    // console.log(response)
     let html = "";
 
     if (response.results) {
-      response.results.forEach((recipe) => {
+      response.results.slice(0,6).forEach((recipe) => {
         html += `
         <div class="recipe-card">
           <img class="recipe-card-img" src="${recipe.image}" alt="food">
