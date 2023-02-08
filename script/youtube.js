@@ -1,6 +1,6 @@
 // GET request to the Youtube API to search for videos with "gluten free vegetarian receipes" keyword (max 6)
 fetch(
-  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=gluten%20free%20vegetarian%20recipes&key=xxx"
+  "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=gluten%20free%20vegetarian%20recipes&key=AIzaSyBtVcpEBC7OOCsQxa7h_5TCjeUuaynHiWo"
 )
   
 // Take the response from the API and converts it to JSON format
