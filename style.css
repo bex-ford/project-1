@@ -1,234 +1,263 @@
 /* variables */
 :root {
-    --primaryclr: #054e37;
-    --primarylightclr: #12a537; 
-    --secondaryclr: #FCBC01;
-    --secondarylightclr: #F5CE64;
-    --accentclr: #5F1646;
-    --textlightclr: #fff;
-    --textcolor: black;
-    --sans-serif: Jost, sans-serif;
-  }
+  --primaryclr: #054e37;
+  --primarylightclr: #12a537;
+  --secondaryclr: #FCBC01;
+  --secondarylightclr: #F5CE64;
+  --accentclr: #5F1646;
+  --textlightclr: #fff;
+  --textcolor: black;
+  --sans-serif: Jost, sans-serif;
+}
 
 
 /* Main style */
 body {
-    font-family: var(--sans-serif);
+  font-family: var(--sans-serif);
 }
-  
+
 /* Navigation bar */
 .navbar {
-    background-color: var(--primaryclr);
+  background-color: var(--primaryclr);
 }
 
-.nav-link, .navbar-brand {
-    color: var(--textlightclr);
-    font-weight: 700;
+.nav-link,
+.navbar-brand {
+  color: var(--textlightclr);
+  font-weight: 700;
 }
 
-.nav-link:hover, .navbar-brand:hover {
-    color: var(--secondarylightclr);
-    
+.nav-link:hover,
+.navbar-brand:hover {
+  color: var(--secondarylightclr);
+
 }
 
 .navbar-item {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Header */
 header {
-    background-color: var(--primaryclr); 
+  background-color: var(--primaryclr);
 }
 
 /* Jumbotron */
 #mission {
-    color: var(--primaryclr);
-    padding-bottom: 20px;
+  color: var(--primaryclr);
+  padding-bottom: 20px;
 }
 
 #about {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 /* Order */
 #title-search {
-    color: var(--primaryclr);
+  color: var(--primaryclr);
 }
 
 #title-search h2 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 label {
-    font-weight: 600;
-    font-size: 25px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .form-group {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
-.btn-search, .btn-clear, .video-btn {
-    background-color: var(--secondarylightclr);
-    color: var(--primaryclr);
-    width: 250px;
-    font-size: 25px;
-    font-weight: 500;
-    border-radius: 5px;
+.btn-search,
+.btn-clear,
+.video-btn {
+  background-color: var(--secondarylightclr);
+  color: var(--primaryclr);
+  width: 250px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 5px;
 }
 
-.btn-search:hover, .btn-clear:hover, .video-btn:hover {
-    background-color: var(--accentclr);
-    color: var(--textlightclr);
+.btn-search:hover,
+.btn-clear:hover,
+.video-btn:hover {
+  background-color: var(--accentclr);
+  color: var(--textlightclr);
 }
 
 /* Spoonacular */
-  .recipe-card {
-    background-color: var(--textlightclr);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: calc(33.33% - 20px); /* width of a single card */
-    margin: 10px;
-    display: inline-block;
-    float: left;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-  }
+.recipe-card {
+  background-color: var(--textlightclr);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 20px);
+  /* width of a single card */
+  margin: 10px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
 
-  .recipe-card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+.recipe-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-  .recipe-card-info {
-    padding: 20px;
-    text-align: center;
-  }
+.recipe-card-info {
+  padding: 20px;
+  text-align: center;
+}
 
-  .recipe-card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.recipe-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  .recipe-card-btn {
-    background-color: var(--primaryclr);
-    color: var(--textlightclr);
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
+.recipe-card-btn {
+  background-color: var(--primaryclr);
+  color: var(--textlightclr);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
-  .recipe-card-btn:hover {
-    background-color: var(--accentclr);
-    color: var(--textlightclr);
-  }
+.recipe-card-btn:hover {
+  background-color: var(--accentclr);
+  color: var(--textlightclr);
+}
 
 /*  Youtube style */
 .video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(33.33% - 10px);
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  
-  .video-title {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .video-img {
-    display: block;
-    margin: 10px auto;
-    padding: 10px auto;
-    text-align: center;
-  }
-  
-  .video-link {
-    margin: 15px auto;
-    padding: 15px auto;
-    text-align: center;
-    background-color: var(--secondarylightclr);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 10px);
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.video-img {
+  display: block;
+  margin: 10px auto;
+  padding: 10px auto;
+  text-align: center;
+}
+
+.video-link {
+  margin: 15px auto;
+  padding: 15px auto;
+  text-align: center;
+  background-color: var(--secondarylightclr);
+}
+
+#title-search h2 {
+  margin: 40px;
+}
 
 /* FAQ section */
-#questions, .accordion-item, .accordion-header, .accordion-button {
-    background-color: var(--accentclr);
-    color: var(--textlightclr);
+#questions,
+.accordion-item,
+.accordion-header,
+.accordion-button {
+  background-color: var(--accentclr);
+  color: var(--textlightclr);
 }
 
 /* Newsletter sign-up */
 .news-cust {
-    color: var(--primaryclr);
+  color: var(--primaryclr);
 }
 
 .btn-news {
-    background-color: var(--secondarylightclr);
-    color: var(--primaryclr);
+  background-color: var(--secondarylightclr);
+  color: var(--primaryclr);
 }
 
 .btn-news:hover {
-    background-color: var(--accentclr);
-    color: var(--textlightclr);
+  background-color: var(--accentclr);
+  color: var(--textlightclr);
 }
 
 /* Footer section */
 .bi-arrow-up-circle {
-    color: var(--textlightclr);
+  color: var(--textlightclr);
 }
 
 .card-bg-primary {
-    background-color: var(--primaryclr);
-    border: 1px solid var(--primaryclr);
+  background-color: var(--primaryclr);
+  border: 1px solid var(--primaryclr);
 }
 
 .btn-acc-round {
-    background-color: var(--secondarylightclr);
-    border: 5px solid var(--secondarylightclr);
-    border-radius: 50%;
-    color: var(--textlightclr);
-    font-weight: 700;
-    margin: 15px;
+  background-color: var(--secondarylightclr);
+  border: 5px solid var(--secondarylightclr);
+  border-radius: 50%;
+  color: var(--textlightclr);
+  font-weight: 700;
+  margin: 15px;
 }
 
 .btn-acc-round:hover {
-        background-color: var(--accentclr);
-        border: 5px solid var(--accentclr);
-        color: var(--textlightclr);
-        box-shadow: 0 0 11px rgba(33,33,33,.5); 
+  background-color: var(--accentclr);
+  border: 5px solid var(--accentclr);
+  color: var(--textlightclr);
+  box-shadow: 0 0 11px rgba(33, 33, 33, .5);
 }
 
-a, 
+a,
 a:hover {
-    text-decoration: none;
-    color: var(--primaryclr);
+  text-decoration: none;
+  color: var(--primaryclr);
 }
 
 /* Media queries */
 
 @media (max-width: 992px) {
-    /* adjust recipe's card width on tablet screens */
-    .recipe-card {
-      width: calc(50% - 20px); 
+
+  /* adjust recipe's card width on tablet screens */
+  .recipe-card {
+    width: calc(50% - 20px);
+  }
+  .video-container {
+    width: calc(33.33% - 10px);
     }
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
   }
 
-  @media (max-width: 767px) {
-    /* display one recipe card per line on mobile screens */
-    .recipe-card {
-      width: 100%; 
+  /* display one recipe card per line on mobile screens */
+  .recipe-card {
+    width: 100%;
+  }
+
+  .video-container {
+    width: 100%;
     }
-    .jumbotron {
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
-  }
-  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .video-container {
+    width: calc(50% - 10px);
+    }
+}
