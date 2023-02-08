@@ -54,8 +54,16 @@ The second API we created was Youtube. This enabled users to have a video link o
 
 ![Youtube API](assets/youtubeAPI.png)
 
+## Brand theme
+Below is an image of the colour palette in which we used throughout designing the web application. 
+
+![colour theme](assets/JVcolour.png)
+
+The font style we used for this project was called **Jost** from google fonts.
+
+
 ## Credits 
 
-- Ryan Ford (Graphic Deisgner). Ryan designed the JustVeggie logo for this project which is displayed below. 
+- Ryan Ford (Graphic Designer). Ryan designed the JustVeggie logo for this project which is displayed below. 
 ![JustVeggie Logo](assets/justveggie.png)
 
