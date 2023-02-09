@@ -1,5 +1,5 @@
 // Assign API Key to a variable
-var apiKey = "417b0ee574024fdba584113ed74ce282"; 
+var apiKey = "cff15fd5c68a4190b152f91d1c8785a0"; 
 
 // Store input values in variables
 var recipeName = $("#dish").val();
